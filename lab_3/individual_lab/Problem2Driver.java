@@ -11,7 +11,6 @@ public class Problem2Driver implements Directions
         karel.turnOff();
         
     } 
-
     static {
         World.reset(); 
         World.readWorld("worlds/fig5-8.kwld"); 
