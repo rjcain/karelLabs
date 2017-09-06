@@ -4,8 +4,6 @@ package lab_2.individual_lab;
    @Author:
       Date:
    Teacher: Appel
-       Lab: Problem Set 3
-      Misc: Karel plants a garden in a cross-shape
   */
 import kareltherobot.*;
 import java.awt.Color;
