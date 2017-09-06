@@ -71,10 +71,10 @@ public class Problem2 extends Robot
                 }
             }
         }
-        else{
-            move();
-            turnLeft();
-        }
+        move();
+        turnLeft();
     }
 }
+    
+
 
