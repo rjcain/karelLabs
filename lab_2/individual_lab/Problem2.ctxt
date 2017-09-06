@@ -6,6 +6,10 @@ comment2.params=
 comment2.target=void\ prepFifth()
 comment3.params=
 comment3.target=void\ prepSixth()
+<<<<<<< HEAD
 comment4.params=
 comment4.target=void\ prepSev()
 numComments=5
+=======
+numComments=4
+>>>>>>> d3ee23cc8970bf51e82122013a914dd216bf3d75

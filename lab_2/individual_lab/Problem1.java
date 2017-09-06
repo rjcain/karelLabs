@@ -15,6 +15,7 @@ public class Problem1 extends Robot
     }
 
     public void setPins(){
+<<<<<<< HEAD
         setFirstRow();
         prepSec();
         setSecRow();
@@ -22,36 +23,70 @@ public class Problem1 extends Robot
         setThirdRow();
         prepFourth();
         setFourthRow();
+=======
+       prepFirst();
+       setFirst();
+       prepSec();
+       setSec();
+       prepThird();
+       setThird();
+       prepFourth();
+       setFourth();
+       move();
+>>>>>>> d3ee23cc8970bf51e82122013a914dd216bf3d75
     }
     public void turnRight() {
         turnLeft();
         turnLeft();
         turnLeft();
     }
+<<<<<<< HEAD
     public void setFirstRow() {
         move();
         putBeeper();
     }
     public void prepSec() {
         turnLeft();
-        move();
-        turnRight();
+=======
+    public void prepFirst() {
         move();
         turnRight();
     }
-    public void setSecRow() {
-        putBeeper();
-        move();
-        move();
+    public void setFirst() {
         putBeeper();
     }
     public void prepThird() {
+>>>>>>> d3ee23cc8970bf51e82122013a914dd216bf3d75
+        move();
+        turnRight();
+        move();
+        turnRight();
+    }
+<<<<<<< HEAD
+    public void setSecRow() {
+=======
+    public void setSec() {
+>>>>>>> d3ee23cc8970bf51e82122013a914dd216bf3d75
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+    }
+<<<<<<< HEAD
+    public void prepThird() {
+=======
+    public void prepSec() {
+>>>>>>> d3ee23cc8970bf51e82122013a914dd216bf3d75
         move();
         turnLeft();
         move();
         turnLeft();
     }
+<<<<<<< HEAD
     public void setThirdRow() {
+=======
+    public void setThird() {
+>>>>>>> d3ee23cc8970bf51e82122013a914dd216bf3d75
         putBeeper();
         move();
         move();
@@ -62,11 +97,19 @@ public class Problem1 extends Robot
     }
     public void prepFourth() {
         move();
+<<<<<<< HEAD
         turnRight();
         move();
         turnRight();
     }
     public void setFourthRow() {
+=======
+        turnLeft();
+        move();
+        turnLeft();
+    }
+    public void setFourth() {
+>>>>>>> d3ee23cc8970bf51e82122013a914dd216bf3d75
         putBeeper();
         move();
         move();
