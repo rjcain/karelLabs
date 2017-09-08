@@ -37,24 +37,41 @@ public class Problem3 extends Robot
         turnLeft();
         turnLeft();
     }
+    public void turnAround() {
+        turnLeft();
+        turnLeft();
+    }
     public void position() {
         move();
         turnLeft();
     }
     public void carpetRoom() {
         enterRoom();
-        checkWalls();
-        
+        analyzeWalls();
     }
     public void enterRoom() {
         move();
     }
-    public void checkWalls() {
+    public boolean rightWallClear() {
         turnRight();
-        if(!frontIsClear()) {
-            turnLeft();
-            turnLeft();
-            if(!frontIsClear()) {
+        if (frontIsClear()) {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public boolean leftWallClear() {
+        turnAround();
+        if (frontIsClear()) {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public void analyzeWalls() {
+        if(!rightWallClear() && !leftWallClear()) {
                 turnRight();
                 if(!frontIsClear()) {
                     putBeeper();
@@ -62,20 +79,15 @@ public class Problem3 extends Robot
                 }
                 else {
                     move();
-                    checkWalls();
+                    analyzeWalls();
                 }
             }
             else{
                 exitRoom();
             }
         }
-        else {
-            exitRoom();
-        }
-    }
     public void beeperExit() {
-        turnLeft();
-        turnLeft();
+        turnAround();
         while(frontIsClear()) {
             move();
             putBeeper();
@@ -84,14 +96,8 @@ public class Problem3 extends Robot
         turnLeft();
     }
     public void exitRoom() {
-        if(!facingSouth()) {
+        while(!facingSouth()) {
             turnLeft();
-            if(!facingSouth()) {
-                turnLeft();
-                if(!facingSouth()) {
-                    turnLeft();
-                }
-            }
         }
         while(frontIsClear()) {
             move();
