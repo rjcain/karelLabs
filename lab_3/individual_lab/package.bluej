@@ -1,21 +1,34 @@
 #BlueJ package file
-dependency1.from=Problem3Driver
-dependency1.to=Problem3
+dependency1.from=Problem2Driver
+dependency1.to=Problem2
 dependency1.type=UsesDependency
 dependency2.from=Problem1Driver
 dependency2.to=Problem1
 dependency2.type=UsesDependency
+<<<<<<< HEAD
 dependency3.from=Problem2Driver
 dependency3.to=Problem2
+=======
+dependency3.from=Problem3Driver
+dependency3.to=Problem3
+>>>>>>> cc58eb5439a317016837f6f50a90d18fcb9d8776
 dependency3.type=UsesDependency
-objectbench.height=93
-objectbench.width=760
+objectbench.height=101
+objectbench.width=776
 package.divider.horizontal=0.6
+<<<<<<< HEAD
 package.divider.vertical=0.8003992015968064
 package.editor.height=394
 package.editor.width=670
 package.editor.x=110
 package.editor.y=174
+=======
+package.divider.vertical=0.8007380073800738
+package.editor.height=427
+package.editor.width=674
+package.editor.x=764
+package.editor.y=222
+>>>>>>> cc58eb5439a317016837f6f50a90d18fcb9d8776
 package.frame.height=600
 package.frame.width=800
 package.numDependencies=3
